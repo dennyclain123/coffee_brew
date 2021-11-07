@@ -1,0 +1,12 @@
+RaisedButton(
+          onPressed: ()async{
+            dynamic result = await authService.signInAnonymous();
+            if(result == null){
+              // print("Sign In Error");
+            }else{
+              // print("Sign In Successfully");
+              // print(result.uid);
+            }
+          },
+          child: Text("Sign In Anonymously"),
+        ),
